@@ -82,18 +82,52 @@ Github은 분산 버전 관리 시스템이다.
 
 ---
 # [Git 기본 명령어](./command.md)
+- `git init`: (로컬)저장소 만들기 
+- `git status`: 현재 상태 확인 
+- `git add`: 현재 상태 추적 
+- `git commit`: 현재 상태 저장
+- `git log`: 커밋 히스토리 조회 
+- `git reset`: 이전 상태로(이력제거)
+- `git revert`: 이전 상태로 (이력 유지)
 
 ---
-# branch
+# [branch 사용법](./branch.md)
+- `git switch -c`: 브랜치 생성
+- `git switch`: 브랜치 변경
+- `git merge`: 브랜치 합치기 
+  - conflict(충돌) 해결 
 
 ---
-# gitignore
+# [.gitignore](https://adjh54.tistory.com/16)
+- 프로젝트 작업시 로컬 환경의 정보나 빌드 정보등 원격 저장소에 관리하지 말아야되는 파일들에 대해서 지정하여 원격 저장소에 실수로 올라가지 않도록 관리하는 파일
+- 정의한 정보들에 해당하는 파일들에 대하여 git track하지 않도록 설정하는 역할을 한다.
+
+### 사용 규칙 
+- '#'로 시작하는 라인은 무시한다.
+- 슬래시(/)로 시작하면 하위 디렉터리에 적용되지(recursivity) 않는다.
+- 디렉터리는 슬래시(/)를 끝에 사용하는 것으로 표현한다.
+- 느낌표(!)로 시작하는 패턴의 파일은 무시하지 않는다.
 
 ---
-# pull conflict
+### 예제
+해당파일 확인: `.gitignore`
+
+![Alt text](./img/vscode/image.png)
 
 ---
-# blame
+# [vscode 사용법](./vscode.md)
 
+---
+## vscode에서 사용하기 좋은 익스텐션 
 
+### 설치하기 
+![Alt text](./img/vscode/image-20.png)
+
+---
+### 사용법 
+
+![w:1000](./img/vscode/image-21.png)
+
+---
+![w:1000](./img/vscode/image-22.png)
 
