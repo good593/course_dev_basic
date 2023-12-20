@@ -118,16 +118,9 @@ Github은 분산 버전 관리 시스템이다.
 # [vscode 사용법](./vscode.md)
 
 ---
-## vscode에서 사용하기 좋은 익스텐션 
+# [Github을 이용한 팀프로젝트](./team.md)
 
-### 설치하기 
-![Alt text](./img/vscode/image-20.png)
 
----
-### 사용법 
 
-![w:1000](./img/vscode/image-21.png)
 
----
-![w:1000](./img/vscode/image-22.png)
 

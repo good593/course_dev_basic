@@ -112,3 +112,18 @@ paginate: true
 - push: 로컬 리포지토리에 있는 소스를 Github 리포지토리에 반영하기 
 
 ![bg right 70% w:600](./img/vscode/image-19.png)
+
+---
+# vscode에서 사용하기 좋은 익스텐션 
+
+## 설치하기 
+![Alt text](./img/vscode/image-20.png)
+
+---
+## 사용법 
+
+![w:1000](./img/vscode/image-21.png)
+
+---
+![w:1000](./img/vscode/image-22.png)
+
