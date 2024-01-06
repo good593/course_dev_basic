@@ -39,5 +39,10 @@ paginate: true
 ## [AWS](./aws/README.md)
 - 아마존닷컴에서 개발한 클라우드 컴퓨팅 플랫폼이다.
 
+---
+# Notion
+- 프로젝트, 목표, 일정 관리 등 
 
+### 참고 문서 
+- https://www.youtube.com/watch?v=RV-3v95fTgM
 
