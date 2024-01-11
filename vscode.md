@@ -27,6 +27,24 @@ paginate: true
   - Undefined : 권한 설정을 하지 않는다.
 
 ---
+# [개발폰트 설치](https://ux.stories.pe.kr/177) 
+### 1단계: [D2 Coding 글꼴 다운로드](https://github.com/naver/d2codingfont)
+![w:700](./img/vscode/image1.png)
+
+---
+### 2단계: D2 Coding 글꼴 설치
+![Alt text](./img/vscode/image1-1.png)
+
+---
+### 3단계: D2 Coding 글꼴 적용
+![bg right w:600](./img/vscode/image1-2.png)
+
+---
+`D2Coding ligature`
+![bg right w:600](./img/vscode/image1-3.png)
+![Alt text](./img/vscode/image1-4.png)
+
+---
 # [자주 사용하는 단축키](https://inpa.tistory.com/entry/VS-Code-%E2%8F%B1%EF%B8%8F-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%A0%95%EB%A6%AC#f2__ctrl_+_h_%EB%88%8C%EB%9F%AC%EC%84%9C_%EB%AA%A8%EB%93%A0_%EB%8B%A8%EC%96%B4_%EB%B0%94%EA%BE%B8%EB%8A%94_%EA%B8%B0%EB%8A%A5%EC%9D%84_%ED%95%9C%EB%B2%88%EC%97%90_%EA%B0%80%EB%8A%A5)
 
 ## 에디터 단축키 
