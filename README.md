@@ -33,16 +33,16 @@ paginate: true
 
 ---
 # [클라우드 컴퓨팅](https://aws.amazon.com/ko/what-is-cloud-computing/)
-- 기존의 물리적인 형태의 실물 컴퓨팅 리소스를 네트워크 기반 서비스 형태로 제공하는 것.
- - 사용자로 하여금 네트워크 상에서 클라우드 서비스의 자원을 사용하는 것을 의미한다.
+- 기존의 물리적인 형태의 실물 컴퓨팅 리소스를 네트워크 기반 서비스 형태로 제공하는 것.
+- 사용자로 하여금 네트워크 상에서 클라우드 서비스의 자원을 사용하는 것을 의미한다.
 
 ## [AWS](./aws/README.md)
 - 아마존닷컴에서 개발한 클라우드 컴퓨팅 플랫폼이다.
 
 ---
-# Notion
-- 프로젝트, 목표, 일정 관리 등 
+# [Virtual Box](./virtual_box.md)
 
-### 참고 문서 
-- https://www.youtube.com/watch?v=RV-3v95fTgM
+---
+# [Notion](https://www.youtube.com/watch?v=RV-3v95fTgM)
+- 프로젝트, 목표, 일정 관리 등 
 
