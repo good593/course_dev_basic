@@ -73,6 +73,26 @@ paginate: true
 ![w:700](./img/virtualbox/image-12.png)
 
 ---
+# [클립보드](https://sidepower.tistory.com/61)
+- Ctrl + c / Ctrl + v 
+
+### 단계1: [Virtual Box 게스트 확장 프로그램 설치](https://sidepower.tistory.com/43) 
+- 우분투 접속 > 장치 > 게스트 확장 CD 이미지 삽입
+![Alt text](./img/virtualbox/image1-1.png)
+
+---
+- Run
+![w:600](./img/virtualbox/image1-2.png)
+
+---
+- Enter
+![Alt text](./img/virtualbox/image1-3.png)
+
+---
+### 단계2: 클립보드 양방향 설정
+![w:800](./img/virtualbox/image1.png)
+
+---
 # ssh  통신하기
 ### 단계1: terminal 조회 및 접속 
 ![w:700](./img/virtualbox/image-13.png)
@@ -160,7 +180,4 @@ exit
 ```
 ![Alt text](./img/virtualbox/image-20.png)
 
----
-- https://spidyweb.tistory.com/236
-- https://earthconquest.tistory.com/256
 
