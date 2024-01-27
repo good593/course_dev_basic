@@ -48,6 +48,10 @@ paginate: true
 ![w:600](./img/virtualbox/image1-2.png)
 
 ---
+- 만약 실행이 안된다면,
+![w:800](./img/virtualbox/image2.png)
+
+---
 - Enter
 ![Alt text](./img/virtualbox/image1-3.png)
 
