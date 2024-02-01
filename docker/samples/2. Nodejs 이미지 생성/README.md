@@ -79,7 +79,7 @@ docker login
 ![Alt text](./img/image-9.png)
 
 ---
-### 단계14: 도커허브아이디/이미지명 
+### 단계13: 도커허브아이디/이미지명 
 - 명령어: docker tag <이미지명>:<테그> <도커허브아이디>/<이미지명>:<테크>
 ```shell
 docker tag hellojs:latest goodwon593/hellojs:latest
@@ -88,7 +88,7 @@ docker image ls # 생성된 이미지 확인
 ![Alt text](./img/image-10.png)
 
 ---
-### 단계15: 도커허브로 이미지 업로드 
+### 단계14: 도커허브로 이미지 업로드 
 - 명령어: docker push <도커허브아이디>/<이미지명>:<테크>
 ```shell
 docker push goodwon593/hellojs
@@ -96,7 +96,7 @@ docker push goodwon593/hellojs
 ![Alt text](./img/image-12.png)
 
 ---
-### 단계16: 도커허브에서 이미지 업로드 확인 
+### 단계15: 도커허브에서 이미지 업로드 확인 
 ![Alt text](./img/image-13.png)
 
 
