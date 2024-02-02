@@ -16,7 +16,7 @@ paginate: true
 - 컨테이너는 훨씬 가볍고 운영체제 커널을 공유하며, 시작이 훨씬 빠르고 운영체제 전체 부팅보다 메모리를 훨씬 적게 차지합니다.
 ---
 # [컨테이너 기술의 발전 과정](https://ahnty0122.tistory.com/160)
-![Alt text](image.png)
+![Alt text](./img/image.png)
 
 ---
 ### Traditional Deployment
@@ -39,7 +39,7 @@ paginate: true
 - Docker는 애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼입니다.
 
 ## virtual Machine vs Docker Container
-![w:700](image-1.png)
+![w:700](./img/image-1.png)
 
 ---
 - virtual Machine
@@ -50,7 +50,7 @@ paginate: true
   - 배포가 빠름: 실행 파일 및 라이브러리만 필요하여 용량이 적음  
 ---
 ## 도커 구성요소
-![w:1000](image-2.png)
+![w:1000](./img/image-2.png)
 
 ---
 - Docker Client
@@ -66,7 +66,7 @@ paginate: true
 ## 도커 이미지와 도커 컨테이너
 - 도커 이미지와 컨테이너는 `1:N` 관계입니다.
 
-![Alt text](image-3.png)
+![Alt text](./img/image-3.png)
 
 ---
 ## [도커 이미지 만들어지는 과정](https://khj93.tistory.com/entry/Docker-Docker-%EA%B0%9C%EB%85%90)
@@ -74,7 +74,7 @@ paginate: true
 - nginx 이미지: unbuntu + nginx Layer
 - web app 이미지: nginx + web app source Layer
 
-![Alt text](image-4.png)
+![Alt text](./img/image-4.png)
 
 ---
 ## 주요 용어 정리 
@@ -88,25 +88,17 @@ paginate: true
   - Docker Hub는 공용 Docker 이미지 저장소입니다. 
 
 ---
-# [Docker 설치하기](./docker_install.md) 
-
----
-# [Docker 기본명령어](./docker_basic.md) 
-
----
-# [Dockerfile](./docker_file.md)
-
----
-# [Docker Compose](./docker_compose.md)
+# Docker 사용법 
+### [1. Docker 설치하기](./docker_install.md) 
+### [2. Docker 기본명령어](./docker_basic.md) 
+### [3. Dockerfile](./docker_file.md)
+### [4. Docker Network](./docker_network.md)
+### [5. Docker Compose](./docker_compose.md)
 
 ---
 # [Docker failed to initailize](https://github.com/docker/for-win/issues/12523#issuecomment-1029156833)
-![Alt text](./img/error/image.png)
-![Alt text](./img/error/image-2.png)
-
-
-
-
+![w:700](./img/error/image.png)
+![w:700](./img/error/image-2.png)
 
 
 
