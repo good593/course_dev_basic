@@ -10,4 +10,6 @@ RUN pip3 install --upgrade pip && \
 
 COPY main.py /root/ 
 
-CMD ["python3"]
+WORKDIR /root
+
+CMD ["python3", "main.py"]
