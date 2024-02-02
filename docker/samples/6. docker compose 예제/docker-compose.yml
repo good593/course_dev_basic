@@ -1,0 +1,36 @@
+version: "3"
+
+# 참고문서: https://docs.docker.com/compose/gettingstarted/
+services:
+  mysql-db:
+    container_name: compose-mysql-db
+    image: mysql
+    restart: always
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./database:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "root1234"
+      MYSQL_DATABASE: "examplesdb"
+      MYSQL_USER: "urstory"
+      MYSQL_PASSWORD: "u1234"
+    ports:
+      - "3306:3306"
+    networks:
+    - compose_net
+  python-mysql:
+    container_name: compose-python-mysql
+    build: .
+    depends_on:
+    - mysql-db
+    networks:
+    - compose_net
+
+# 참고문서: https://docs.docker.com/compose/networking/
+networks:
+  compose_net:
+    name: compose_mysql_net
+    driver: bridge
+
