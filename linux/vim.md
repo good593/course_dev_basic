@@ -15,7 +15,7 @@ apt-get install vim
 ![Alt text](./img/vim/image-1.png)
 
 ---
-## Vim 환경 설정 
+## (옵션)Vim 환경 설정 
 ```shell
 cd ~ # 사용자 홈으로 이동한다.
 vim .vimrc # vim 환경설정 파일을 만든다.
@@ -35,55 +35,79 @@ cat .vimrc # vim 환결설정 내용 확인
 ![Alt text](./img/vim/image-3.png)
 
 ---
+## Vim 명령어 
+![w:800](./img/vim/image-10.png)
+
+---
 ## Vim 3가지 모드 
 - vi 편집기는 명령모드, 입력모드, 마지막 행 모드로 총 3가지 모드로 구성되어있다. 
 
 ![Alt text](./img/vim/image-6.png)
 
 ---
-![Alt text](./img/vim/image-5.png)
+![w:1000](./img/vim/image-5.png)
 
 ---
-### 입력모드 
-![Alt text](./img/vim/image-8.png)
-
-### 마지막행 모드 
-![Alt text](./img/vim/image-9.png)
+# vim 연습 예제 
 
 ---
-## Vim 명령어 
-![Alt text](./img/vim/image-10.png)
+### 단계1: 명령모드
+- vim을 통해 접속했을 때의 첫 화면 
+- 명령어: vim <파일명>
+```shell
+vim /etc/hosts
+```
+![bg right w:600](./img/vim/image1.png)
 
 ---
-### 입력모드 
-![Alt text](./img/vim/image-11.png)
+### 단계2: 행 번호 표시 
+![Alt text](./img/vim/image-16.png)
+- 행번호 표시 
+
+![w:600](./img/vim/image1-2.png)
 
 ---
-### 라인 이동 
+### 단계3: 라인 이동 
 ![Alt text](./img/vim/image-12.png)
 
 ---
-### 내용 변경 
-![Alt text](./img/vim/image-13.png)
+- 마지막 행으로 이동됨 
+
+![w:800](./img/vim/image1-3.png)
 
 ---
-### 내용 삭제 
-![Alt text](./img/vim/image-14.png)
-
----
-### 내용 되돌리기 
-![Alt text](./img/vim/image-15.png)
-
-### vim 행 번호 표시 
-![Alt text](./img/vim/image-16.png)
-
----
-### 검색 
+### 단계4: 검색 
 ![Alt text](./img/vim/image-17.png)
 
 ---
-### 저장 및 종료 
+![w:800](./img/vim/image1-1.png)
+
+---
+### 단계5: 입력모드 
+![Alt text](./img/vim/image-11.png)
+
+---
+![w:800](./img/vim/image1-4.png)
+
+---
+### 단계6: 명령모드로 다시 변경 
+- esc 버큰 클릭 
+
+![w:800](./img/vim/image1-5.png)
+
+---
+### 단계7: 저장 및 종료 
 ![Alt text](./img/vim/image-18.png)
+
+---
+![w:800](./img/vim/image1-6.png)
+
+---
+### 단계8: 수정 결과 확인 
+```shell
+cat /etc/hosts
+```
+![bg right w:600](./img/vim/image1-7.png)
 
 ---
 # 참고문서 
