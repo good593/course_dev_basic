@@ -41,8 +41,10 @@ apt-get dist-upgrade
 ---
 - 패키기/라이브러리 설치
 - 명령어: apt-get install -y <라이브러리명>
+  - `sudo`: 일반사용자에게 root 권한을 부여
+  - `vim`: 리눅스용 에디터
 ```shell
-apt-get install -y tree
+apt-get install -y sudo vim
 ```
 ![Alt text](./img/basic/image-4.png)
 

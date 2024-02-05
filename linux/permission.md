@@ -33,34 +33,44 @@ ls -al
 ---
 ### 문자모드 예제 
 - 파일 생성 
-
-![Alt text](./img/permission/image-7.png)
-
----
+- 생성된 파일의 허가권(Permissions): `-rw-r--r--`
+- 소유자만 읽기 쓰기가 가능하고 그룹 및 그 밖의 사용자는 읽기만 가능
 ```shell
-chmod go+rw test.txt
+touch test.txt
 ```
-![Alt text](./img/permission/image-8.png)
+![bg right w:600](./img/permission/image-7.png)
 
 ---
 ![Alt text](./img/permission/image-10.png)
 ![Alt text](./img/permission/image-11.png)
 
 ---
-### 숫자모드 예제 
-- 파일 생성 
-
-![Alt text](./img/permission/image-12.png)
+- 권한 변경 
+- `g`: group(그룹) / `o`: others(그 밖의 사용자)
+- `go+rw`: group과 others에게 r(읽기)와 w(쓰기) 권한 추가 
+```shell
+chmod go+rw test.txt
+```
+![Alt text](./img/permission/image-8.png)
 
 ---
+### 숫자모드 예제 
+- 파일 생성 
 ```shell
-chmod 777 test1.txt
+touch test1.txt
 ```
-![Alt text](./img/permission/image-13.png)
+![Alt text](./img/permission/image-12.png)
 
 ---
 ![Alt text](./img/permission/image-3.png)
 ![Alt text](./img/permission/image-5.png)
+
+---
+- 사용자/그룹/다른사용자 모두에게 읽기/쓰기/실행 권한 부여 
+```shell
+chmod 777 test1.txt
+```
+![Alt text](./img/permission/image-13.png)
 
 ---
 # 참고문서 
@@ -68,3 +78,5 @@ chmod 777 test1.txt
 - https://wlsvud84.tistory.com/9
 - https://hack-cracker.tistory.com/32
 - https://tttap.tistory.com/246 
+
+
