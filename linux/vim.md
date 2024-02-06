@@ -62,9 +62,8 @@ vim /etc/hosts
 ---
 ### 단계2: 행 번호 표시 
 ![Alt text](./img/vim/image-16.png)
-- 행번호 표시 
 
-![w:600](./img/vim/image1-2.png)
+![bg right w:600](./img/vim/image1-2.png)
 
 ---
 ### 단계3: 라인 이동 

@@ -68,9 +68,15 @@ paginate: true
 ---
 - docker를 이용하여 ubuntu 실행 
 ```shell
+# 컨테이너가 없다면,
 docker run -it --name ubuntu_test -u ubuntu ubuntu /bin/bash
+
+# 만약 컨테이너가 있다면,
+docker exec -it ubuntu_test /bin/bash
 ```
 ![Alt text](./img/image-0.png)
+
+
 
 ---
 ## [Linux 기본 명령어](./basic.md)
@@ -87,7 +93,7 @@ docker run -it --name ubuntu_test -u ubuntu ubuntu /bin/bash
 - VIM은 Vi IMproved의 약자 이다. 즉, vi에디터를 업그레이드 시킨 것이 vim에디터라고 생각하면 된다.
 
 ---
-## [Shell (bash shell)](./Shell.md)
+## [Shell (bash shell)](./shell/README.md)
 
 
 
