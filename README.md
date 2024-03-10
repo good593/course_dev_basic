@@ -40,7 +40,9 @@ paginate: true
 - 아마존닷컴에서 개발한 클라우드 컴퓨팅 플랫폼이다.
 
 ---
-# [Virtual Box](./virtual_box.md)
+# Virtual Box
+### [윈도우용 Virtual Box](./virtualbox/README.md)
+### [Mac m1 Virtual Box](./utm/README.md)
 
 ---
 # [Notion](https://www.youtube.com/watch?v=RV-3v95fTgM)
