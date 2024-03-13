@@ -27,14 +27,14 @@ paginate: true
 ```shell
 cat /etc/shells
 ``` 
-![bg right w:600](image.png)
+![bg right w:600](./img/image.png)
 
 ---
 ### 단계2: 현재 지정된 Shell 확인 
 ```shell
 echo $SHELL
 ```
-![Alt text](image-1.png)
+![Alt text](./img/image-1.png)
 
 ---
 # [1. bash 변수](./1.%20bash%20변수.md)
