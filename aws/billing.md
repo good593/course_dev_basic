@@ -15,7 +15,7 @@ paginate: true
 
 ---
 # AWS 비용 확인 방법 
-![Alt text](image-9.png)
+![Alt text](./img/billing/image-9.png)
 
 
 ---
