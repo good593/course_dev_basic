@@ -13,38 +13,34 @@ paginate: true
 ```shell
 docker build -t goodwon593/springhelloworld:v1 .
 ```
-![w:800](image.png)
+![w:800](./img/image.png)
 
 ---
 ### 단계2: docker image 확인 
 ```shell
 docker image ls
 ```
-![alt text](image-1.png)
+![alt text](./img/image-1.png)
 
 ---
 ### 단계3: docker container 
 ```shell
 docker run --name spring-helloworld -d -p 8080:8080 goodwon593/springhelloworld:v1
 ```
-![alt text](image-2.png)
+![alt text](./img/image-2.png)
 
 ---
 ### 단계4: docker container 확인 
 ```shell
 docker ps
 ```
-![alt text](image-3.png)
+![alt text](./img/image-3.png)
 
 ---
 ### 단계5: 테스트 
 - http://localhost:8080/api/v1/hello
 
-![alt text](image-4.png)
-
-
-
-
+![alt text](./img/image-4.png)
 
 
 ---
