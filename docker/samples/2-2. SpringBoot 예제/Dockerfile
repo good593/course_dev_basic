@@ -14,7 +14,7 @@ RUN ./gradlew build || return 0
 
 COPY src $APP_HOME/src
 
-RUN ./gradlew clean build
+RUN ./gradlew clean build --refresh-dependencies
 
 FROM openjdk:17.0.2-jdk
 
