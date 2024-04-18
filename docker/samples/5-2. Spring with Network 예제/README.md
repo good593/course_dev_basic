@@ -17,7 +17,7 @@ paginate: true
 docker network create spring-net
 docker network ls
 ```
-![alt text](image.png)
+![alt text](./img/image.png)
 
 ---
 # MySQL 
@@ -30,7 +30,7 @@ docker images
 # 만약 없다면,
 docker pull mysql
 ```
-![alt text](image-1.png)
+![alt text](./img/image-1.png)
 
 ---
 ### 단계2: MySQL Container
@@ -39,7 +39,7 @@ docker run -d --name mysql-container -p 3306:3306 -e MYSQL_ROOT_PASSWORD=pass my
 
 docker ps
 ```
-![alt text](image-2.png)
+![alt text](./img/image-2.png)
 
 ---
 ### 단계3: dbeaver 및 CREATE DATABASE
@@ -48,20 +48,33 @@ CREATE DATABASE springdocker;
 
 show databases;
 ```
-![alt text](image-3.png)
+![alt text](./img/image-3.png)
 
 ---
 ### 단계4: Network Connect
 ```shell
 docker network connect spring-net mysql-container
 ```
-![alt text](image-4.png)
+![alt text](./img/image-4.png)
 
 ---
 # SpringBoot JPA
 
 ---
-### 단계1: application.yaml
+### 단계1:  dependencies
+```gradle
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+```
+
+---
+### 단계2: application.yaml
 ```yaml
 spring:
     output:
@@ -85,14 +98,14 @@ spring:
                 
 ```
 ---
-### 단계2: @SpringBootTest & @Test 주석처리 
+### 단계3: @SpringBootTest & @Test 주석처리 
 - Test 과정에서 JPA가 MySQL 접속하는 과정에 오류가 발생할 수 있음 
 - 아직 MySQL이 포함된 docker network에 접속을 할 수 없기 때문에 오류가 발생함 
 
-![alt text](image-6.png)
+![alt text](./img/image-6.png)
 
 ---
-### 단계3: Dockerfile
+### 단계4: Dockerfile
 ```docker
 FROM gradle:7.6-jdk17-alpine as build
 
@@ -129,18 +142,33 @@ EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 ---
-### 단계4: docker build
+### 단계5: docker build
 ```shell
 docker build -t springdockernetwork .
 ```
-![alt text](image-5.png)
+![alt text](./img/image-5.png)
 
 ---
-### 단계5: docker run 
+### 단계6: springdockernetwork
 ```shell
-docker run -d --name spring-container --network=my-net springdockernetwork
+docker images
 ```
+![alt text](./img/image-7.png)
 
+---
+### 단계7: docker run 
+```shell
+docker run -d --name spring-container --network=spring-net springdockernetwork
 
+docker ps
+```
+![alt text](./img/image-8.png)
 
+---
+### 단계8: springboot jpa와 mysql 연동확인
+```sql
+use springdocker;
 
+show tables;
+```
+![alt text](./img/image-9.png)
