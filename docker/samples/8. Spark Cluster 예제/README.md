@@ -214,5 +214,42 @@ docker ps
 ![alt text](./img/image-4.png)
 
 ---
+# PySpark Test
+
+---
+### 단계1: SparkSession
+```python
+from pyspark.sql import SparkSession
+
+spark = SparkSession.\
+        builder.\
+        appName("pyspark-notebook").\
+        master("spark://spark-master:7077").\
+        config("spark.executor.memory", "512m").\
+        getOrCreate()
+```
+---
+![alt text](./img/image1.png)
+
+---
+### 단계2: Download Data
+```python
+import wget
+
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+wget.download(url)
+```
+![alt text](./img/image1-1.png)
+
+---
+### 단계3: Show Data
+```python
+data = spark.read.csv("iris.data")
+data.show(n=5)
+```
+![alt text](./img/image1-2.png)
+
+
+---
 # 참고문서
 - https://todaycodeplus.tistory.com/31
